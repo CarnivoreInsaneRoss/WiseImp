@@ -46,7 +46,7 @@ For a quick and easy setup:
 
 - `WiseImp.exe` — Main launcher application.
 - `AutoUpdater.exe` — Handles version checks, downloads, and installation.
-- `WiseImp_Update.rar` — Archive file containing new version, hosted on GitHub.
+- `WiseImp_vX.X.X.rar` — Archive file containing new version, hosted on GitHub.
 
 ---
 
