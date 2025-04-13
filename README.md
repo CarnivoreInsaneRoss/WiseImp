@@ -4,7 +4,13 @@
 
 This is a solo-developed project created out of a passion for preserving the classic RuneScape experience in a modern format.
 
+
 ---
+
+🛠 Installation
+For a quick and easy setup:
+
+🔄 Just download the latest release of AutoUpdater.exe — it will handle everything else for you.
 
 ## 🚀 Features
 
