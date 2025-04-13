@@ -10,7 +10,8 @@ For a quick and easy setup:
 🔄 Just download the latest release of AutoUpdater.exe into a folder of your choice and run it — it will handle everything else for you.
 
 ![Hiscore](https://github.com/user-attachments/assets/0bf139fb-c0af-4838-84e7-0532b17c00e6)
-![Market](https://github.com/user-attachments/assets/b22297d4-0248-4d9e-9758-c73a179f680b)
+![Market](https://github.com/user-attachments/assets/b2487784-d593-4984-b564-75898f5cc840)
+
 
 ---
 
