@@ -20,7 +20,7 @@ For a quick and easy setup:
 
 ### 🌍 World Switcher
 - Displays all available worlds with real-time player counts.
-- Connects to the official Lost City world list endpoint.
+- Connects to the official Lost City world list.
 
 ### 📊 Hiscores Viewer
 - Search and display player stats across all skills.
@@ -28,7 +28,7 @@ For a quick and easy setup:
 
 ### 💰 Market Access
 - Built-in access to [lostcity.markets](https://lostcity.markets) for buying and selling items.
-- Developed and maintained by **BigShot**, integrated into the WiseImp launcher for convenience.
+- Developed and maintained by **BigShot**, integrated into WiseImp for convenience.
 
 ### 🔄 Auto-Updater
 - Automatically checks for the latest version via GitHub.
@@ -42,7 +42,6 @@ For a quick and easy setup:
 
 - `WiseImp.exe` — Main launcher application.
 - `AutoUpdater.exe` — Handles version checks, downloads, and installation.
-- `version.txt` — Remote file used to determine the latest version.
 - `WiseImp_Update.rar` — Archive file containing new version, hosted on GitHub.
 
 ---
