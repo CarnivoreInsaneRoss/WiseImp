@@ -7,7 +7,7 @@ This is a solo-developed project created out of a passion for preserving the cla
 🛠 Installation
 For a quick and easy setup:
 
-🔄 Just download the latest release of AutoUpdater.exe — it will handle everything else for you.
+🔄 Just download the latest release of AutoUpdater.exe into a folder of your choice and run it — it will handle everything else for you.
 
 ---
 
