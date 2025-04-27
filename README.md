@@ -7,7 +7,7 @@ This is a solo-developed project created out of a passion for preserving the cla
 🛠 Installation
 For a quick and easy setup:
 
-🔄 Just download the latest release of [AutoUpdater.exe](https://github.com/CarnivoreInsaneRoss/WiseImp/releases/download/v1.0.2/AutoUpdater.exe) into a folder of your choice and run it — it will handle everything else for you.
+🔄 Just download the latest release of [AutoUpdater.exe](https://github.com/CarnivoreInsaneRoss/WiseImp/releases/download/v1.1.0/AutoUpdater.exe) into a folder of your choice and run it — it will handle everything else for you.
 
 ![Hiscore](https://github.com/user-attachments/assets/0bf139fb-c0af-4838-84e7-0532b17c00e6)
 ![Market](https://github.com/user-attachments/assets/b2487784-d593-4984-b564-75898f5cc840)
