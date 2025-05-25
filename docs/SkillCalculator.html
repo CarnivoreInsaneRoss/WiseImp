@@ -157,6 +157,9 @@ function updateCurrentLevel() {
     currentXp = parseInt(document.getElementById('currentXP').value) || 0;
     currentLevel = xpToLevel(currentXp);
     document.getElementById('currentLevel').value = currentLevel;
+
+    const goalLevel = Math.min(currentLevel + 1, 99);
+    document.getElementById('targetLevel').value = goalLevel;
 }
 
 function updateSkillInfo() {
