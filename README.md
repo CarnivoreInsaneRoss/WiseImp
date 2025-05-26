@@ -29,8 +29,8 @@ For a quick and easy setup:
 ### 📊 Hiscores Viewer
 - Search and display player stats across all skills.
 - Simple, fast, and integrated directly into the launcher.
-- Click a **skill icon** to open a **Skill Calculator** (powered by [2004HQ](https://2004hq.com)).  
-  > **Credit:** Site created by Moley, Eilert, Halogod, and Collin.
+- Click a **skill icon** to open a **Skill Calculator** (powered by custom code using data sourced from [2004HQ](https://2004hq.com)).  
+  > **Credit:** Skill data originally compiled by Moley, Eilert, Halogod, and Collin.
 
 ### 📜 Quest Tab
 - Access the full quest list through an integrated tab (powered by [2004HQ](https://2004hq.com)).  
