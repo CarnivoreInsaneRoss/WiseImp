@@ -1,9 +1,9 @@
 {
-  "latestVersion": "1.1.0",
+  "latestVersion": "1.1.1",
   "minimumRequiredVersion": "1.1.0",
   "autoUpdaterVersion": "1.0.0",
   "isCritical": false,
-  "downloadUrl": "https://github.com/CarnivoreInsaneRoss/WiseImp/releases/download/v1.1.0/WiseImp.v1.1.0.rar",
-  "changelogUrl": "https://github.com/CarnivoreInsaneRoss/WiseImp/releases/tag/v1.1.0",
+  "downloadUrl": "https://github.com/CarnivoreInsaneRoss/WiseImp/releases/download/v1.1.1/WiseImp.v1.1.1.rar",
+  "changelogUrl": "https://github.com/CarnivoreInsaneRoss/WiseImp/releases/tag/v1.1.1",
   "autoUpdaterUrl": "https://github.com/CarnivoreInsaneRoss/WiseImp/releases/download/v1.1.0/AutoUpdater.exe"
 }
