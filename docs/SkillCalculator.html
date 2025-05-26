@@ -4,103 +4,129 @@
     <meta charset='UTF-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Skill Calculator</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #111;
-            color: #ccc;
-            margin: 0;
-            padding: 5px;
-            width: 325px;
-            overflow-y: scroll;
-            overflow-x: hidden;
-        }
-        .calculator-header {
-            text-align: center;
-            margin-bottom: 10px;
-            padding-bottom: 5px;
-            border-bottom: 1px solid #333;
-        }
-        .calculator-title {
-            font-size: 18px;
-            font-weight: bold;
-            color: #90c040;
-            margin: 5px 0;
-        }
-        .input-group {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 8px;
-            align-items: center;
-        }
-        label {
-            width: 100px;
-            text-align: right;
-            padding-right: 10px;
-            font-size: 13px;
-        }
-        input {
-            width: 80px;
-            background-color: #222;
-            color: #fff;
-            border: 1px solid #333;
-            padding: 3px 5px;
-        }
-        button {
-            background-color: #1a1a1a;
-            color: #90c040;
-            border: 1px solid #333;
-            padding: 5px 10px;
-            margin: 5px 0;
-            cursor: pointer;
-            width: 100%;
-        }
-        button:hover {
-            background-color: #222;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 5px;
-            font-size: 12px;
-        }
-        th {
-            background-color: #1a1a1a;
-            padding: 3px 5px;
-            text-align: left;
-            font-weight: bold;
-        }
-        td {
-            padding: 3px 5px;
-            border-bottom: 1px solid #333;
-        }
-        .available {
-            color: #90c040;
-        }
-        .unavailable {
-            color: #c04040;
-            opacity: 0.7;
-        }
-        .category-btn {
-            background-color: #1a1a1a;
-            color: #ccc;
-            border: 1px solid #333;
-            padding: 3px 6px;
-            margin: 2px;
-            cursor: pointer;
-            font-size: 12px;
-        }
-        .category-btn.active {
-            background-color: #333;
-            color: #90c040;
-        }
-        #categoryButtons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin: 5px 0;
-        }
-    </style>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #111;
+        color: #ccc;
+        margin: 0;
+        padding: 5px;
+        width: 340px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .calculator-header {
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #333;
+    }
+    .calculator-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #90c040;
+        margin: 5px 0;
+    }
+    .input-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        align-items: center;
+    }
+    label {
+        width: 100px;
+        text-align: right;
+        padding-right: 10px;
+        font-size: 13px;
+    }
+    input {
+        width: 80px;
+        background-color: #222;
+        color: #fff;
+        border: 1px solid #333;
+        padding: 3px 5px;
+    }
+    button {
+        background-color: #1a1a1a;
+        color: #90c040;
+        border: 1px solid #333;
+        padding: 5px 10px;
+        margin: 5px 0;
+        cursor: pointer;
+        width: 100%;
+    }
+    button:hover {
+        background-color: #222;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 5px;
+        font-size: 11.5px;
+    }
+    th {
+        background-color: #1a1a1a;
+        padding: 3px 5px;
+        text-align: left;
+        font-weight: bold;
+    }
+    td {
+        padding: 3px 5px;
+        border-bottom: 1px solid #333;
+    }
+    .available {
+        color: #90c040;
+    }
+    .unavailable {
+        color: #c04040;
+        opacity: 0.7;
+    }
+    .category-btn {
+        background-color: #1a1a1a;
+        color: #ccc;
+        border: 1px solid #333;
+        padding: 3px 6px;
+        margin: 2px;
+        cursor: pointer;
+        font-size: 12px;
+    }
+    .category-btn.active {
+        background-color: #333;
+        color: #90c040;
+    }
+    #categoryButtons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 5px 0;
+    }
+    #progressBarContainer {
+        margin-top: 10px;
+        border: 1px solid #444;
+        background-color: #222;
+        height: 18px;
+        width: 100%;
+        position: relative;
+    }
+    #progressBar {
+        height: 100%;
+        width: 0%;
+        background-color: #7fb837;
+        transition: width 0.5s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #111;
+        font-size: 11px;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+</style>
+
 </head>
 <body>
     <div class='calculator-header'>
