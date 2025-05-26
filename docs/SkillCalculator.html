@@ -295,6 +295,7 @@ function getQueryParam(param) {
 window.addEventListener('DOMContentLoaded', () => {
     const skill = getQueryParam('skill');
     const xp = parseInt(getQueryParam('xp')) || 0;
+
     if (skill && embeddedSkillsData.skills[skill]) {
         skillData = embeddedSkillsData;
         currentSkill = skill;
@@ -304,8 +305,22 @@ window.addEventListener('DOMContentLoaded', () => {
         loadCategories();
     }
 
-    document.getElementById('currentXP').addEventListener('input', updateCurrentLevel);
-    document.getElementById('calculateBtn').addEventListener('click', calculate);
+    const currentXPInput = document.getElementById('currentXP');
+    const targetLevelInput = document.getElementById('targetLevel');
+    const calculateBtn = document.getElementById('calculateBtn');
+
+
+    currentXPInput.addEventListener('input', updateCurrentLevel);
+    calculateBtn.addEventListener('click', calculate);
+
+    [currentXPInput, targetLevelInput].forEach(input => {
+        input.addEventListener('keydown', function (e) {
+            if (e.key === 'Enter') {
+                e.preventDefault();
+                calculateBtn.click();
+            }
+        });
+    });
 });
 
 // 
