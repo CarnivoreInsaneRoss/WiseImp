@@ -267,7 +267,7 @@ function calculate() {
         const row = document.createElement('tr');
         row.className = isAvailable ? 'available' : 'unavailable';
         row.innerHTML = `
-            <td>${item.level}</td>
+            <td class="level-cell">${item.level}</td>
             <td>${item.name}</td>
             <td>${item.xp}</td>
             <td>${isAvailable ? item.itemsNeeded.toLocaleString() : '—'}</td>
@@ -320,6 +320,15 @@ window.addEventListener('DOMContentLoaded', () => {
                 calculateBtn.click();
             }
         });
+    });
+    document.getElementById('resultsTable').addEventListener('click', function (e) {
+        if (e.target && e.target.classList.contains('level-cell')) {
+            const level = parseInt(e.target.textContent);
+            if (!isNaN(level)) {
+                document.getElementById('targetLevel').value = level;
+                calculate();
+            }
+        }
     });
 });
 
